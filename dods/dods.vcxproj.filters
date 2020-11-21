@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="entrypoint.cpp" />
+    <ClCompile Include="sdk\util\util.cpp" />
+    <ClCompile Include="interfaces\interfaces.cpp" />
+    <ClCompile Include="netvar_manager\netvar_manager.cpp" />
+    <ClCompile Include="sdk\vmt_hook\vmt_hook.cpp" />
+    <ClCompile Include="hooks\hooks.cpp" />
+    <ClCompile Include="features\feature.cpp" />
+    <ClCompile Include="render\render.cpp" />
+    <ClCompile Include="features\esp\esp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="sdk">
+      <UniqueIdentifier>{66eed5ad-2a12-46bd-a398-5b77e8c28890}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sdk\includes.hpp">
+      <Filter>sdk</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\util\util.hpp" />
+    <ClInclude Include="sdk\valve\chl_client\chl_client.hpp" />
+    <ClInclude Include="sdk\valve\recv_prop\recv_prop.hpp" />
+    <ClInclude Include="interfaces\interfaces.hpp" />
+    <ClInclude Include="sdk\valve\iv_engine_client\iv_engine_client.hpp" />
+    <ClInclude Include="sdk\valve\matrix\matrix.hpp" />
+    <ClInclude Include="sdk\valve\vector\vector.hpp" />
+    <ClInclude Include="netvar_manager\netvar_manager.h" />
+    <ClInclude Include="sdk\valve\color\color.hpp" />
+    <ClInclude Include="sdk\valve\i_surface\i_surface.hpp" />
+    <ClInclude Include="sdk\valve\i_input_system\i_input_system.hpp" />
+    <ClInclude Include="sdk\valve\c_client_entity_list\c_client_entity_list.hpp" />
+    <ClInclude Include="sdk\valve\c_base_entity\c_base_entity.hpp" />
+    <ClInclude Include="sdk\valve\iv_debug_overlay\iv_debug_overlay.hpp" />
+    <ClInclude Include="sdk\valve\i_panel\i_panel.hpp" />
+    <ClInclude Include="sdk\vmt_hook\vmt_hook.hpp" />
+    <ClInclude Include="hooks\hooks.hpp" />
+    <ClInclude Include="features\feature.hpp" />
+    <ClInclude Include="render\render.hpp" />
+    <ClInclude Include="features\esp\esp.hpp" />
+  </ItemGroup>
+</Project>
