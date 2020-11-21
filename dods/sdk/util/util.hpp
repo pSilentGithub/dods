@@ -9,6 +9,8 @@ namespace util {
 
 	void* capture_interface( const char* mod, const char* iface );
 
+	std::uint8_t* get_signature( const char* module_name, const char* signature );
+
 	template < typename T > static T get_virtual_function( void* base, const std::uint16_t index ) {
 		return ( *reinterpret_cast< T** >( base ) )[ index ];
 	}
