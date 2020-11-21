@@ -8,7 +8,7 @@ namespace i {
 	extern c_client_entity_list* entity_list;
 	extern i_debug_overlay* debug_overlay;
 	extern i_panel* panel;
-	extern DWORD device;
+	extern std::uint8_t* device;
 
 	void setup( );
 }

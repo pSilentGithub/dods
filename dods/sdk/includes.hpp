@@ -5,7 +5,6 @@
 #include <thread>
 #include <unordered_map>
 #include <string>
-#include <d3d9.h>
 
 #include "util/util.hpp"
 

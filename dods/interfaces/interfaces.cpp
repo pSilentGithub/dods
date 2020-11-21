@@ -8,7 +8,7 @@ namespace i {
 	c_client_entity_list* entity_list;
 	i_debug_overlay* debug_overlay;
 	i_panel* panel;
-	DWORD device;
+	std::uint8_t* device;
 }
 
 void i::setup( ) {
@@ -33,5 +33,5 @@ void i::setup( ) {
 	//__cstring:004DA113 0000000E C VGUI_Panel009
 	iface( panel, i_panel, "vgui2.dll", "VGUI_Panel009" );
 
-	device = **reinterpret_cast<uint32_t**>( util::get_signature( "shaderapidx9.dll", "A1 ? ? ? ? 50 8B 08 FF 51 0C" ) + 1 );
+	device = util::get_signature( "shaderapidx9.dll", "A1 ? ? ? ? 50 8B 08 FF 51 0C" ) + 1;
 }
