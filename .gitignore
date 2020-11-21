@@ -1,3 +1,8 @@
 
 .vs/dods/v16/.suo
 *.db
+*.db-shm
+*.db-wal
+*.opendb
+.vs/dods/v16/ipch/AutoPCH/b3241ac10f21b877/FEATURE.ipch
+.vs/dods/v16/ipch/AutoPCH/3a603944a8a2a495/ESP.ipch
