@@ -3,14 +3,17 @@
 c_esp* esp = new c_esp( );
 
 void c_esp::draw( ) {
+	if ( !config::esp::enabled )
+		return;
+
 	auto local_player = i::entity_list->get_client_entity( i::engine->get_local_player( ) );
 
 	if ( !local_player )
 		return;
 
-
 	this->players( );
 }
+
 void c_esp::players( ) {
 	auto local_player = i::entity_list->get_client_entity( i::engine->get_local_player( ) );
 
@@ -31,17 +34,16 @@ void c_esp::players( ) {
 			continue;
 
 
-		{ // name esp
+		if ( config::esp::name )
 			render::text( render::fonts::main, info.name, box.x + ( box.w / 2 ), box.y - 14, true, color( 255, 255, 255, 255 ) );
-		}
 
-		{ // box
+		if ( config::esp::box ) {
 			render::outlined_rect( box.x - 1, box.y - 1, box.w + 2, box.h + 2, color( 0, 0, 0, 255 ) );
 			render::outlined_rect( box.x, box.y, box.w, box.h, color( 255, 0, 0, 255 ) );
 			render::outlined_rect( box.x + 1, box.y + 1, box.w - 2, box.h - 2, color( 0, 0, 0, 255 ) );
 		}
 
-		{ // healthbar
+		if ( config::esp::health ) {
 			auto health = entity->m_iHealth( );
 
 			int healthbar_height = ( health * ( box.h + 2 ) ) / 100;

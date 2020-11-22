@@ -13,6 +13,7 @@ unsigned long __stdcall initialize( _In_ LPVOID reserved ) {
 	netvar_manager = std::make_unique<netvar_tree>( );
 	offsets::setup( );
 	render::setup( );
+	menu::initialize( );
 	h::setup( );
 
 

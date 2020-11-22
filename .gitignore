@@ -10,3 +10,8 @@
 *.tlog
 *.obj
 *.pdb
+*.ipch
+*.dll
+*.recipe
+*.iobj
+*.ipdb

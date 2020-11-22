@@ -115,7 +115,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>minhook.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -152,6 +152,8 @@
     <ClCompile Include="features\feature.cpp" />
     <ClCompile Include="hooks\hooks.cpp" />
     <ClCompile Include="interfaces\interfaces.cpp" />
+    <ClCompile Include="menu\config\config.cpp" />
+    <ClCompile Include="menu\menu.cpp" />
     <ClCompile Include="netvar_manager\netvar_manager.cpp" />
     <ClCompile Include="render\render.cpp" />
     <ClCompile Include="sdk\util\util.cpp" />
@@ -162,6 +164,8 @@
     <ClInclude Include="features\feature.hpp" />
     <ClInclude Include="hooks\hooks.hpp" />
     <ClInclude Include="interfaces\interfaces.hpp" />
+    <ClInclude Include="menu\config\config.hpp" />
+    <ClInclude Include="menu\menu.hpp" />
     <ClInclude Include="netvar_manager\netvar_manager.h" />
     <ClInclude Include="render\render.hpp" />
     <ClInclude Include="sdk\includes.hpp" />

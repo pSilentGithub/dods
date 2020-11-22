@@ -34,6 +34,6 @@ void __fastcall paint_traverse( std::uintptr_t ecx, std::uintptr_t edx, unsigned
 				feature->draw( );
 		}
 
-		render::text( render::fonts::main, "dods hack", 5, 8, false, color( 255, 255, 255, 255 ) );
+		menu::run( );
 	}
 }

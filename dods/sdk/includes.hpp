@@ -29,5 +29,8 @@
 #include "../interfaces/interfaces.hpp"
 #include "../hooks/hooks.hpp"
 
+#include "../menu/config/config.hpp"
+#include "../menu/menu.hpp"
+
 #include "../features/feature.hpp"
 #include "../features/esp/esp.hpp"

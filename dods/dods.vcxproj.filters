@@ -10,6 +10,8 @@
     <ClCompile Include="features\feature.cpp" />
     <ClCompile Include="render\render.cpp" />
     <ClCompile Include="features\esp\esp.cpp" />
+    <ClCompile Include="menu\menu.cpp" />
+    <ClCompile Include="menu\config\config.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="sdk">
@@ -40,5 +42,7 @@
     <ClInclude Include="features\feature.hpp" />
     <ClInclude Include="render\render.hpp" />
     <ClInclude Include="features\esp\esp.hpp" />
+    <ClInclude Include="menu\menu.hpp" />
+    <ClInclude Include="menu\config\config.hpp" />
   </ItemGroup>
 </Project>
